@@ -3,7 +3,7 @@
 
   <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
 
     <title>THESHADE Style Guide - Joshua Nicolas - 301138709</title>
@@ -257,43 +257,46 @@
     <p>#nav-header</p>
     <h3>Sample code:</h3>
     <code>
-      &lt;div id="centered-nav-container"&gt;
-          &lt;div id="lower-nav-bar"&gt;
-               &lt;div id="lower-nav-bar-left"&gt;
-                &lt;ul&gt;
-                &lt;li&gt;&lt;a class="button-nav2" href="#">SHOP&lt;/a&gt;&lt;/li&gt;.......
+    &lt;nav id=&quot;nav-header&quot;&gt;
+        &lt;div id=&quot;logo-container&quot;&gt;
+          &lt;a class=&quot;logo&quot; href=&quot;#&quot;&gt;THE SHADE OF IT ALL&lt;/a&gt;
+         &lt;/div&gt;
+        &lt;ul class=&quot;active&quot;&gt; 
+          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;SHOP&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;About &lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact &lt;/a&gt;&lt;/li&gt;
+
+          &lt;li class=&quot;button-nav2&quot;&gt;&lt;a href=&quot;#&quot;&gt;LOG IN&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;button-nav2&quot;&gt;&lt;a href=&quot;#&quot;&gt;CART (0)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+     
+       &lt;a class=&quot;nav-toggle&quot; href=&quot;#&quot;&gt;&amp;#9776;&lt;/a&gt; 
+     
+       &lt;form class=&quot;search-form&quot;&gt;
+         &lt;input type=&quot;text&quot; value=&quot;Search...&quot;&gt;
+       &lt;/form&gt;
+    &lt;/nav&gt;  
     </code>
     <h3>Rendered element:</h3> 
-<nav id="nav-header">
+    <nav id="nav-header">
+        <div id="logo-container">
+          <a class="logo" href="#">THE SHADE OF IT ALL</a>
+         </div>
+        <ul class="active"> 
+          <li class="button-nav"><a href="#">SHOP</a></li>
+          <li class="button-nav"><a href="#">About </a></li>
+          <li class="button-nav"><a href="#">Contact </a></li>
 
-      <div id="centered-nav-container">
-          <div id="lower-nav-bar">
-               <div id="lower-nav-bar-left">
-                <ul>
-                <li><a class="button-nav2" href="#">SHOP</a></li>
-                <li><a class="button-nav2" href="#">About </a></li>
-                <li><a class="button-nav2" href="#">Contact </a></li>
-                </ul>
-          </div> <!-- ./lower-nav-bar-left -->
-      <div id="lower-nav-bar-right">
-                <ul>
-                <li><a class="button-nav" href="#">SEARCH</a></li>
-                <li><a class="button-nav2" href="#">LOG IN</a></li>
-                <li><a class="button-nav2" href="#">CART (0)</a></li>
-                </ul>
-      </div><!-- ./lower-nav-bar-right -->
-      <div div="lower-nav-bar-center">
-                <ul>
-                <li><a class="button-nav" href="#">THE SHADE OF IT ALL - EYEWEAR LOGO</a></li>
-              </ul>
-      </div>
-
-
-
-      </div> 
-      </div> <!-- ./lower-nav-bar -->
-      </div> <!-- ./centered-nav-container -->
-      </nav>  
+          <li class="button-nav2"><a href="#">LOG IN</a></li>
+          <li class="button-nav2"><a href="#">CART (0)</a></li>
+        </ul>
+     
+       <a class="nav-toggle" href="#">&#9776;</a> 
+     
+       <form class="search-form">
+         <input type="text" value="Search...">
+       </form>
+    </nav>  
       </section>
 
       <section>

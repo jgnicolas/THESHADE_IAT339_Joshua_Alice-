@@ -128,10 +128,10 @@ cite {
   display: inline-block;
   border: none;
   padding: 10px 20px;
-  height: 20px;
+  height: 40px;
   outline: 0 !important;
   font-size: 1em;
-  font-color: #000;
+  color: #000;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none; /*no underline */
@@ -254,71 +254,151 @@ textarea:focus, input:focus{
   COMBINED ELEMENTS -------------------
 */
 /* Navigation Menu */
-/* Container for header navigation menu, which is centered and has padding on both sides for
-   whitespace */
-#centered-nav-container {
-    padding-left: 12%;
-    padding-right: 12%;
+/* toggle button hidden on larger screens*/
+
+.nav-toggle {
+  display: none;
 }
 
-/* Reduce the padding */
-@media (max-width: 80rem) {
-    #centered-nav-container {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+.button-nav {
+    border: 1px solid #8e8e8e;
 }
 
-/* Finally, eliminate the padding */
-@media (max-width: 50rem) {
-    #centered-nav-container {
-        padding-left: 0;
-        padding-right: 0;
-    }
+/* navbar */
+
+ #nav-header {
+    width: 100%;
+    padding: 1.5em 2em;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+
+
+#nav-header ul {
+   display: inline-block;
 }
 
-/* Lower-nav-bar indicates it is the lower section of the header bar, where the main navigation
-   links are */
-#lower-nav-bar {
-    clear: both;
-    max-width: 100%;
-    overflow: auto;
-    margin: 0;
+#nav-header li {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 10px;
+  float: left;
+  list-style: none;
+}
+
+/* no right margin on last nav list item to prevent searchbar from moving to next line  */
+#nav-header li:last-child {
+  margin-right: 0px;
+}
+
+#nav-header a {
+  color: #000;
+  text-decoration: none;
+  transition: color linear 0.15s;
+}
+
+#nav-header a:hover {
+  opacity: 0.8;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+#logo-container {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* searchbar */
+
+.search-form {
+  width: 20%;
+  margin: 1em;
+  display: inline-block;
+}
+
+.search-form input {
+  width: 100%;
+  background-color: #fff;
+  color: #2d2d2d;
+  font-family: "Open Sans", sans-serif;
+  font-size: .75em;
+  padding: 6px 15px 6px 30px;
+  margin: 3px;
+  float: left;
+  border: 1px solid #2d2d2d;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #E62739;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+/*media queries*/
+@media screen and (max-width: 1032px) {
+  #nav-header {
+      position: relative;
+      display: inline-block;
+  }
+  .button-nav, .button-nav2 {
+      text-align: center;
+      width: 100%;
+      padding: 8px 0;
+      border: 1px solid black;
+  }
+  
+  #nav-header ul, #nav-header:active ul {
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
     padding: 0;
-}
-
-/* Remove the bullets and margin/padding from the nav list */
-#lower-nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-/* For the left side of the navigation (Browse/About Us/Contact Us) */
-#lower-nav-bar-left ul li {
+    left: 1.5em;
+    top: 5em;
+    width: 30%;
+    background-color: #fff;
+    
+    transition: all 0.5s ease 0s, visibility 0s linear 1s;
+  }
+  /* make menu visible when hover */
+  #nav-header:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    display: block;
+  }
+  
+  #nav-header ul li:hover {
+    background-color: #D75555;
+    transition: 0.5s;
+  }
+  
+  #nav-header ul li:hover > a {
+    color: #fff;
+  }
+  
+  
+  .nav-toggle {
+    display: inline-block;
+    margin: 1em;
+    padding: 10px;
     float: left;
-}
-
-/* Float the right side of the navigation (log in/register and cart) to the right */
-#lower-nav-bar-right {
-    float: right;
- }
-#lower-nav-bar-center {
-    float: center;
- }
-
-/* Collapse the right-hand menu options into a second row */
-@media (max-width: 35rem) {
-    #lower-nav-bar-right {
-        clear: both;
-        float: left;
-    }
-}
-
-/* After floating to the right, this sets the order of the menu items in the correct order */
-#lower-nav-bar-right ul li {
-    float: left;
+    border: 1px solid #000;
+  }
+  
 }
 
 /* Product Listing Page */
