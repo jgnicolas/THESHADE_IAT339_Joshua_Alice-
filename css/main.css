@@ -408,5 +408,14 @@ textarea:focus, input:focus{
   font-size: 1.9rem;
 }
 
+/* Styling for the grid elements */
+.content {
+  background: #FFFFFF;
+  padding: 10px;
+
+}
+
+
+
 
 
