@@ -52,6 +52,87 @@ section code {
   background-color:#777;
 }
 
+/* Styling for the navigation button */
+.fixednavbar{ /* LOGO FIX ON LEFT SIDE - THE TOP NAV BAR*/
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 1em;
+  z-index: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.shown {
+  visibility: visible;
+  position: relative;
+}
+
+
+.img-logo { /* When the screen is small, have the logo centered and above the navigation */
+  display:block;
+  margin:0 auto;
+  padding:1em 0;
+  max-height:6em;
+  width:auto;
+  opacity:1;
+}
+
+.img-logo:hover, .img-logo:focus { /* When the screen is small, have the logo centered and above the navigation */
+  opacity:0.5;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+nav ul { /* Align the navigation items to the center when the screen is small */
+  width:100%;
+  padding-right:2em;
+  text-align:center;
+}
+
+nav ul li {
+  list-style-type:none;
+  display:inline-block; /* Navigation items are side-by-side with a larger screen size */
+}
+
+.button {
+  color: #000;
+  text-decoration: none; 
+  display: inline-block;
+  outline: 0 !important;
+  text-transform: uppercase;
+  font-family: ;Open+Sans', Arial, sans-serif;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.navlink {
+  font-size: 1em;
+  border: 2px solid #999;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.checkout {
+  color: #E62739;
+}
+
+.navlink:hover {
+  background-color: #999;
+  color: #FFF;
+}
 
 
 
@@ -236,7 +317,7 @@ cite {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
+/* Styling for the navigation button 
 .button-nav {
   position: relative;
   display: inline-block;
@@ -248,7 +329,7 @@ cite {
   color: #000;
   text-transform: uppercase;
   color: #fff;
-  text-decoration: none; /*no underline */
+  text-decoration: none; 
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -272,7 +353,7 @@ cite {
   color: #000;
   text-transform: uppercase;
   color: #fff;
-  text-decoration: none; /*no underline */
+  text-decoration: none; /
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -284,6 +365,7 @@ cite {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
 }
+*/
 
 .in-text-link, .in-text-link:visited, .in-text-link:active {
     color: #FC5968;
