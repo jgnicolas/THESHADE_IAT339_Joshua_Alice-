@@ -194,6 +194,11 @@ textarea { /* Ensure that the textarea is big enough and that it doesn't somehow
   min-height:12em;
 }
 
+footer p {
+  margin-top:1em;
+  text-align:center;
+}
+
 
 
 
@@ -229,6 +234,7 @@ textarea { /* Ensure that the textarea is big enough and that it doesn't somehow
     padding-bottom: 0;
   }
 }
+
 /* ----------------------OLD CODE----------------------  */
 
 
