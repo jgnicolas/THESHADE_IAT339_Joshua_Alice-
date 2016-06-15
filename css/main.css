@@ -37,19 +37,11 @@ section code {
   display: block;
 }
 
-/* Colour palette <div> tags */
+/* Colour Boxes <div> tags */
 [class*='colour-'] { 
   width:20%;
   height:10em;
   display:inline-block;
-}
-
-.colour-teal {
-  background-color:#0DB3BC;
-}
-
-.colour-orange {
-  background-color:#EFA867;
 }
 
 .colour-lightgray {
@@ -60,15 +52,12 @@ section code {
   background-color:#777;
 }
 
-.colour-darkestgray {
-  background-color:#515151;
-}
 
 
 
 /* TEXT ELEMENTS */
 
-section h1 {
+section.h1 {
   color:#0DB3BC;
   font-size:5rem;
   font-family: 'Open+Sans', sans-serif;
