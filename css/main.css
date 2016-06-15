@@ -80,6 +80,38 @@ p.subheading { /* Styling specifically for the paragraph text that shows up righ
   margin:1em 0;
 }
 
+.more-below, .more-below-small { /* Class to be used if there's more content below (more-below-small only shows up when the screen is very small) */
+  border-bottom: 0.1em solid #CCC;
+  margin-bottom:2em;
+  padding-bottom:2em;
+}
+
+/* Interactive Elements */
+
+/* Styling for the text fields and labels in forms */
+
+.textfield-label {
+  display: block;
+  font-wieght:bold;
+  color:0DB3BC;
+  font-size: 1.25rem;
+}
+
+.textfield {
+  border-style: solid;
+  border-width: 0.125em;
+  border-color:999;
+  padding-left: 0.25em;
+  width:100%;
+  margin-bottom: 1em;
+  display: block;
+  font-size: 1rem;
+}
+
+textarea { /* Ensure that the textarea is big enough and that it doesn't somehow expand beyond the bounds of the screen */
+  max-width:100%;
+  min-height:12em;
+}
 
 
 
@@ -298,7 +330,7 @@ cite {
   
 }
 
-form    {
+/*form    {  -------------------ADDED NEW ONE ABOVE
   margin:0px;
   font-size: 16px;
   font-weight: bold;
@@ -315,6 +347,8 @@ input    {
   margin: 1em;
 
 }
+*/
+
 
 .input-wrapper {
 
