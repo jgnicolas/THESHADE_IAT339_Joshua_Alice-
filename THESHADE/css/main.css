@@ -12,7 +12,7 @@
 body {
   font-family: 'Open+Sans', Arial, sans-serif;
   font-size: 100%;
-  padding: 20rem 2em 2em 2em;
+  padding: 10rem 2em 2em 2em;
   color: #777; /* font colour */ 
   background-color: #FFFFFF;
 }
@@ -231,6 +231,7 @@ footer p {
   background-color:#f1f1f1;
   padding: 20px;
   margin-bottom: 1em;
+  margin-top: 2rem;
 }
 
 #cart-total li {
@@ -247,6 +248,37 @@ footer p {
   margin: 0;
   font-size: 2em;
   text-align: right;
+}
+
+.shipping-form {
+  background-color: rgba(72,72,72,0.4);
+  border-radius: 10px;
+  width: 100%;
+  float: left;
+  padding: 1em;
+  text-align: center;
+}
+
+.feedback-input {
+  color: #2d2d2d;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-left {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form-right {
+  float: right;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 
@@ -300,7 +332,7 @@ footer p {
 
 
 section:not([id]) {
-  margin: 1em 0;
+  margin: 1em 2em;
   padding: 1em 0;
   border-bottom: .25em solid #fff;
 }
