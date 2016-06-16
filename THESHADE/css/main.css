@@ -9,11 +9,18 @@
   box-sizing: border-box;
 }
 
+/*html {
+  background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}*/
+
 body {
-  font-family: 'Open+Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 100%;
-  padding: 10rem 2em 2em 2em;
-  color: #777; /* font colour */ 
+/*  padding: 10rem 2em 2em 2em;*/
+/*  padding-top: 10rem;
+*/  color: #777; /* font colour */ 
   background-color: #FFFFFF;
 }
 
@@ -37,6 +44,8 @@ section code {
   display: block;
 }
 
+
+
 /* Colour Boxes <div> tags */
 [class*='colour-'] { 
   width:20%;
@@ -56,9 +65,9 @@ section code {
 .fixednavbar{ /* LOGO FIX ON LEFT SIDE - THE TOP NAV BAR*/
   position: absolute;
   width: 100%;
-  -webkit-box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
+/*  -webkit-box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
   -moz-box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
-  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,0.25);*/
   top: 0;
   left: 0;
   right: 0;
@@ -287,6 +296,53 @@ footer p {
   color: #2d2d2d;
 }
 
+#order-confirmed h1, 
+#order-confirmed h2, 
+#order-confirmed p {
+  color: black;
+  text-align: center;
+}
+
+#order-confirmed h1 {
+  font-size: 2.5em;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* homepage elements */
+
+.homepage-section {
+  margin: 0;
+}
+
+.homepage-section figure {
+  margin: 0;
+}
+
+.homepage-section h1 {
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+  display: inline-block;
+}
+
+.homepage-section img {
+  width: 100%;
+  min-width: 480px;
+}
+
+/*.home-button-nav {
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+*/
 
 
 
@@ -383,7 +439,7 @@ section p {
 nav {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 0.15em solid #fff;
+/*  border-bottom: 0.15em solid #fff;*/
 }
 
 nav a:hover, nav a:focus {
