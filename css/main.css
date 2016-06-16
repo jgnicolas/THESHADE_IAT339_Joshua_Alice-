@@ -143,6 +143,7 @@ section.h1 {
   font-size:5rem;
   font-family: 'Open+Sans', sans-serif;
   margin:0;
+  padding-top: 1rem;s
 }
 
 p.subheading { /* Styling specifically for the paragraph text that shows up right beneath <h1> tags */
@@ -233,6 +234,17 @@ footer p {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+}
+
+.boxed{
+  border: 2.5rem solid black;
+  text-align:center;
+}
+
+.product-listing:hover{ 
+  -webkit-box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
 }
 
 /* ----------------------OLD CODE----------------------  */
@@ -627,23 +639,6 @@ textarea:focus, input:focus{
     border: 1px solid #000;
   }
   
-}
-
-/* Product Listing Page */
-#glasses-product-listing{
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.9rem;
-}
-
-/* GRID - Declaration */
-
-
-
-
-
-
-}
 
 
 
