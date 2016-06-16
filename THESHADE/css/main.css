@@ -250,7 +250,7 @@ footer p {
   text-align: right;
 }
 
-.shipping-form {
+.checkout-form {
   background-color: rgba(72,72,72,0.4);
   border-radius: 10px;
   width: 100%;
@@ -279,6 +279,12 @@ footer p {
   width: 50%;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  color: #2d2d2d;
 }
 
 
@@ -440,6 +446,17 @@ cite {
   -ms-transition: 0.4s;
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
+}
+
+.button-left {
+  width: 45%;
+  float: left;
+  margin-right: 10px;
+}
+
+.button-right {
+  width: 45%;
+  float: right;
 }
 
 .button-nav2 {

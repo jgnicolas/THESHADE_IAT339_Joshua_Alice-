@@ -26,37 +26,38 @@
 
 	    <div class="grid-container">
 		    <section>
-		    	<h1>Shipping information</h1>
-		    	<p>Fill in your shipping information here. All fields required!</p>
+		    	<h1>Payment information</h1>
+		    	<p>Select your payment method and enter your card information. All fields required. Please confirm your shipping information below.</p>
 		    </section>
 	    </div>
 
 	    <div class="grid-container">
 	  		<div class="col-2of3">
-				<section id="shipping-info">
+				<section id="payment-info">
 					<form class="checkout-form">
 						<p>
-				        	<input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
+				        	<select class="dropdown">
+				        		<option value="Mastercard">Mastercard</option>
+				        		<option value="Visa">Visa</option>
+				        		<option value="AMEX">AMEX</option>
+				        	</select>
 				      	</p>
-						<p class="form-left">
-					        <input name="first-name" type="text" class="feedback-input" placeholder="First name" id="first-name" />
-					     </p>
-					    <p class="form-right">
-					        <input name="last-name" type="text" class="feedback-input" placeholder="Last name" id="last-name" />
-					    </p>
 					    <p>
-				        	<input name="address" type="text" class="feedback-input" id="address" placeholder="Address" />
+				        	<input name="card-number" type="text" class="feedback-input" id="card-number" placeholder="Card number" />
 				      	</p>
 
-				      	<p class="form-left">
-					        <input name="city" type="text" class="feedback-input" placeholder="City" id="city" />
-					     </p>
-					    <p class="form-right">
-					        <input name="province" type="text" class="feedback-input" placeholder="Province" id="province" />
-					    </p>
-					    <p class="form-left">
-					        <input name="postal-code" type="text" class="feedback-input" placeholder="Postal code" id="postalcode" />
-					     </p>
+				      	<p>
+				        	<input name="card-name" type="text" class="feedback-input" id="card-namer" placeholder="Card holder name" />
+				      	</p>
+
+				  		<p class="form-left">
+				        	<input name="expiration" type="text" class="feedback-input" id="expiration" placeholder="Expiration date" />
+				      	</p>
+
+				      	<p class="form-right">
+				        	<input name="cvc" type="text" class="feedback-input" id="cvc" placeholder="CVC" />
+				      	</p>
+
 					    <p>
 				        	<input name="phone" type="text" class="feedback-input" id="phone" placeholder="Phone number" />
 				      	</p>
@@ -77,8 +78,8 @@
 						<p class="price">$166.96</p>
 					</li>
 				</section>
-				<a href="checkout.html" class="button-nav button-left">BACK</a>
-				<a href="checkout3.html" class="button-nav button-right">NEXT</a>
+				<a href="checkout2.html" class="button-nav button-left">BACK</a>
+				<a href="#" class="button-nav button-right">FINISH</a>
 			</div>
 
 		</div>
