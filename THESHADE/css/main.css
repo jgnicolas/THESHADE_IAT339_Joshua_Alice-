@@ -160,11 +160,20 @@ section.h1 {
   font-size:5rem;
   font-family: 'Open+Sans', sans-serif;
   margin:0;
-  padding-top: 1rem;s
+  padding-top: 2rem;s
+}
+
+h1.about {
+  color:#e74c3c;
+  font-size:5rem;
+  font-family: 'Open+Sans', sans-serif;
+  margin:0;
+  padding-top: 2rem;s
 }
 
 p.subheading { /* Styling specifically for the paragraph text that shows up right beneath <h1> tags */
   font-size:1.2rem;
+  color:#e74c3c;
 }
 
 /*Grid System*/
@@ -378,6 +387,9 @@ footer p {
 
   .col-1of2 {
     width:50%;
+  }
+  .col-3of3 {
+    width:100%;
   }
 
   [class*='col-'] { /* Remove outside margins */
@@ -841,7 +853,9 @@ textarea:focus, input:focus{
   }
   
 
-
+.img-ad {
+  width: 100%
+}
 
 
 
