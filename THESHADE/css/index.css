@@ -6,7 +6,7 @@ body {
         margin: 0;
         padding: 0;
       /*responsive fullscreen bg */
-			background-image: url(img/header-bg.jpg);
+			background-image: url(../img/header-bg.jpg);
 			background-position: right center;
 			background-repeat:  no-repeat;
 			background-attachment: fixed;
