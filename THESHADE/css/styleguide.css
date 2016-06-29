@@ -2,9 +2,9 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
 body {
   font-family: 'Open+Sans', sans-serif;
-  font-weight: normal;
   padding: 2rem;
   color: #fff; /* font colour */ 
   background-color: #A8DEDC;
