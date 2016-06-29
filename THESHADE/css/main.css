@@ -470,6 +470,8 @@ footer p {
   text-align:center;
 }
 
+
+/* Product Listing - Eyewear */
 .product-eyewear {
   display:inline-block;
   -webkit-box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.25);
@@ -483,10 +485,47 @@ footer p {
 }
 
 .product-eyewear:hover{ 
-  -webkit-box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
-  box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 1em 0 rgba(0,0,0,1);
+  -moz-box-shadow: 0 0 1em 0 rgba(0,0,0,1);
+  box-shadow: 0 0 1em 0 rgba(0,0,0,1);
 }
+
+p.product-eyenamename  { 
+  text-decoration: none;
+  color:#353531;
+  font-size:1rem;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom:0;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.product-eyewearinfo { 
+  padding:1em;
+  text-align:center;
+  text-transform: uppercase;
+  border-top-style:solid;
+  border-color: #CCC;
+  border-top-width: 0.1em;
+  -webkit-transition: border-color, background-color 0.3s ease-out;
+  -moz-transition: border-color, background-color 0.3s ease-out;
+  transition: border-color, background-color 0.3s ease-out;
+}
+
+.product-eyewear:hover .product-eyewearinfo, .product-eyewear:focus .product-eyewearinfo { 
+
+  border-top-style:solid;
+  border-top-width: 0.1em;
+  background-color: #f1c40f;
+}
+
+.product-eyewear:hover p.product-eyenamename, .product-eyewear:focus p.product-eyenamename { 
+  color:#FFF;
+}
+
+/* Product Listing - Eyewear ENDS */
 
 /* ----------------------OLD CODE----------------------  */
 
