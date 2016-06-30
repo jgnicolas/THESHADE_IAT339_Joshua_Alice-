@@ -1,0 +1,53 @@
+/*Grid System*/
+
+.grid-container:after { /* Clears the floats after a grid row */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] { /* By default (mobile-first) columns are stacked */
+  margin:1em 0;
+}
+
+.more-below, .more-below-small { /* Class to be used if there's more content below (more-below-small only shows up when the screen is very small) */
+  border-bottom: 0.1em solid #CCC;
+  margin-bottom:2em;
+  padding-bottom:2em;
+}
+
+/* Media Queries */ 
+
+@media (min-width:50em) { /* Media queries which take place once the screen is 50em or larger */
+
+  .grid-container { /* Regular grids used for layout grids (flexbox reserved for other kinds of scaling info) */
+    margin-left:-1em;
+    margin-right:-1em;
+  }
+
+  .col-1of3 {
+    width:33.33%; /* At a certain screen size, make the columns 33% and 66% */
+  }
+
+  .col-2of3 {
+    width:66.66%;
+  }
+
+  .col-1of2 {
+    width:50%;
+  }
+  .col-3of3 {
+    width:100%;
+  }
+
+  [class*='col-'] { /* Remove outside margins */
+    padding:0 1em;
+    float:left;
+  }
+
+  .more-below-small {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
