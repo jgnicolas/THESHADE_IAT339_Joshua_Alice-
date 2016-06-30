@@ -8,6 +8,7 @@
 
     <title>THESHADEOFITALL Style Guide - JOSHUA - ALICE  </title>
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styleguide.css" >
     <link rel="stylesheet" href="css/newgrid.css">
   </head> 
@@ -17,33 +18,37 @@
   <body>
     <h1>THE SHADE OF IT ALL - STYLE GUIDE</h1>
 
-    <nav>
-      
-      <p>
-        On this page:
-      </p>
-      <ul>
-        <li>
-          <a href="#interactive_elements">Interactive Elements</a>
-        </li>
-        <li>
-          <a href="#text_elements">Text Elements</a>
-        </li>
-        <li>
-          <a href="#combined_elements">Combined Elements</a>
-        </li>
-      </ul>
+    <div class="product-wrapper">
 
-      <p>Other pages:</p>
-      <ul>
-        <li><a href="Style_guide.html">Style Guide</a>
-        <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20DESKTOP/#p=one_-_glasses">User Flow - DESKTOP</a>
-        <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20SMARTPHONE/#p=one_-_hamburger_menu">User Flow - SMARTPHONE</a>
-        <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20APPLE%20WATCH/#p=one_-_shop">User Flow - SMARTWATCH</a>
-        <li><a href="Citations.html">Citations</a>
-      </ul>
+    <div class="section group">
+      <nav class="styleguide-nav">
+        
+        <p>
+          On this page:
+        </p>
+        <ul>
+          <li>
+            <a href="#interactive_elements">Interactive Elements</a>
+          </li>
+          <li>
+            <a href="#text_elements">Text Elements</a>
+          </li>
+          <li>
+            <a href="#combined_elements">Combined Elements</a>
+          </li>
+        </ul>
 
-    </nav>
+        <p>Other pages:</p>
+        <ul>
+          <li><a href="Style_guide.html">Style Guide</a>
+          <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20DESKTOP/#p=one_-_glasses">User Flow - DESKTOP</a>
+          <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20SMARTPHONE/#p=one_-_hamburger_menu">User Flow - SMARTPHONE</a>
+          <li><a href="http://www.sfu.ca/~joshuan/IAT%20339/FirstProject/FINAL/Axure%20/IAT%20339%20-%20FINAL%20-%20APPLE%20WATCH/#p=one_-_shop">User Flow - SMARTWATCH</a>
+          <li><a href="Citations.html">Citations</a>
+        </ul>
+
+      </nav>
+    </div>
 
 
 
@@ -56,13 +61,13 @@
         <h2>Navigation Button</h2>
 
         <h3>CSS selector:</h3>
-        <p>.button-nav</p>
+        <p>.nav-button</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a class="button-nav" href="#"&gt;ABOUT THE COMPANY&lt;/a&gt;</code>
+        <code>&lt;a class="nav-button" href="#"&gt;ABOUT THE COMPANY&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button-nav" href="#">ABOUT THE COMPANY</a>
+        <a class="nav-button" href="#">ABOUT THE COMPANY</a>
 
       </section>
 
@@ -70,30 +75,13 @@
         <h2>In-text link</h2>
 
         <h3>CSS selector:</h3>
-        <p>.in-text-link</p>
+        <p>.navlink button</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a class="in-text-link" href="#"&gt;SHOP MEN'S GLASSES&lt;/a&gt;</code>
+        <code>&lt;a class="navlink button" href="#"&gt;SHOP MEN'S GLASSES&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="in-text-link" href="#">SHOP MEN'S GLASSES</a>
-
-      </section>
-
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-        <h3>CSS selector:</h3>
-        <p>.button-cancel - .button-signin</p>
-
-        <h3>Sample code:</h3>
-        <code>
-                    &lt;a class="button-cancel" href="#"&gt;CANCEL&lt;/a&gt;<br>
-                    &lt;a class="button-signin" href="#"&gt;SIGN IN&lt;/a&gt;
-        </code>
-
-        <h3>Rendered element:</h3>
-                <a class="button-cancel" href="#">CANCEL</a>
-                <a class="button-signin" href="#">SIGN IN</a>
+        <a class="navlink button" href="#">SHOP MEN'S GLASSES</a>
 
       </section>
 
@@ -101,34 +89,16 @@
         <h2>Text Input Field</h2>
 
          <h3>CSS selector:</h3>
-        <p>.input-wrapper</p>
+        <p>.feedback-input</p>
 
         <h3>Sample code:</h3>
         <code>
-                    &lt;a class="input-wrapper" href="#"&gt;first name&lt;/a&gt;<br>
-      
+                    &lt;input name=&quot;card-number&quot; type=&quot;text&quot; class=&quot;feedback-input&quot; id=&quot;card-number&quot; placeholder=&quot;Card number&quot; /&gt;
         </code>
         <h3>Rendered element:</h3>
-  <section id="forms">
 
-      <div class="input-wrapper">
-        First Name: <input type="text" name="firstName">
-      </div>  
-
-      <div class="input-wrapper">
-        Last Name: <input type="text" name="lastName">
-      </div>  
-
-      <div class="input-wrapper">
-        Email Address: <input type="text" name="email">
-      </div>  
-
-      <div class="input-wrapper">
-        Confirm Email: <input type="text" name="email">
-      </div>  
-
-  </section>
-
+        <input name="card-number" type="text" class="feedback-input" id="card-number" placeholder="Card number" />
+            
 
       </section>
 
@@ -238,9 +208,6 @@
       <li>Wooden Glasses</li>
     </ol>
 
-
-
-
   </section>
   </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -253,49 +220,40 @@
       <section>
         <h2>Main Navigation</h2>
       <h3>CSS selector:</h3> 
-    <p>#nav-header</p>
+    <p>.fixednavbar</p>
     <h3>Sample code:</h3>
     <code>
-    &lt;nav id=&quot;nav-header&quot;&gt;
-        &lt;div id=&quot;logo-container&quot;&gt;
-          &lt;a class=&quot;logo&quot; href=&quot;#&quot;&gt;THE SHADE OF IT ALL&lt;/a&gt;
-         &lt;/div&gt;
-        &lt;ul class=&quot;active&quot;&gt; 
-          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;SHOP&lt;/a&gt;&lt;/li&gt;
-          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;About &lt;/a&gt;&lt;/li&gt;
-          &lt;li class=&quot;button-nav&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact &lt;/a&gt;&lt;/li&gt;
-
-          &lt;li class=&quot;button-nav2&quot;&gt;&lt;a href=&quot;#&quot;&gt;LOG IN&lt;/a&gt;&lt;/li&gt;
-          &lt;li class=&quot;button-nav2&quot;&gt;&lt;a href=&quot;#&quot;&gt;CART (0)&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-     
-       &lt;a class=&quot;nav-toggle&quot; href=&quot;#&quot;&gt;&amp;#9776;&lt;/a&gt; 
-     
-       &lt;form class=&quot;search-form&quot;&gt;
-         &lt;input type=&quot;text&quot; value=&quot;Search...&quot;&gt;
-       &lt;/form&gt;
-    &lt;/nav&gt;  
+      &lt;nav class=&quot;fixednavbar&quot;&gt;
+          &lt;a href=&quot;index.html&quot;&gt;&lt;img class=&quot;img-logo&quot; src=&quot;img/LOGO2.png&quot; alt=&quot;THE SHADE LOGO.&quot;&gt;&lt;/a&gt;
+          &lt;img src=&quot;https://cdn1.iconfinder.com/data/icons/android-user-interface-vol-1/16/38_-_menu_bar_lines_option_list_hamburger_web-128.png&quot; alt=&quot;menu icon&quot; class=&quot;menu&quot;&gt;
+          &lt;ul class=&quot;nav-mobile-hidden&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;glasses.html&quot;&gt;Glasses&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;sunglasses.html&quot;&gt;Sunglasses&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;contactlenses.html&quot;&gt;Contact Lenses&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;events.html&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink nav-icon&quot; href=&quot;checkout.html&quot;&gt;&lt;img class=&quot;icon&quot; width=&quot;30&quot; height=&quot;30&quot; src=&quot;img/cart.png&quot; alt=&quot;checkout cart&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;button navlink&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;icon&quot; width=&quot;30&quot; height=&quot;30&quot; src=&quot;img/login.png&quot; alt=&quot;login-logout&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/nav&gt; 
     </code>
     <h3>Rendered element:</h3> 
-    <nav id="nav-header">
-        <div id="logo-container">
-          <a class="logo" href="#">THE SHADE OF IT ALL</a>
-         </div>
-        <ul class="active"> 
-          <li class="button-nav"><a href="#">SHOP</a></li>
-          <li class="button-nav"><a href="#">About </a></li>
-          <li class="button-nav"><a href="#">Contact </a></li>
 
-          <li class="button-nav2"><a href="#">LOG IN</a></li>
-          <li class="button-nav2"><a href="#">CART (0)</a></li>
-        </ul>
-     
-       <a class="nav-toggle" href="#">&#9776;</a> 
-     
-       <form class="search-form">
-         <input type="text" value="Search...">
-       </form>
-    </nav>  
+    <div class="section group">
+      <nav class="fixednavbar">
+          <a href="index.html"><img class="img-logo" src="img/LOGO2.png" alt="THE SHADE LOGO."></a>
+          <img src="https://cdn1.iconfinder.com/data/icons/android-user-interface-vol-1/16/38_-_menu_bar_lines_option_list_hamburger_web-128.png" alt="menu icon" class="menu">
+          <ul class="nav-mobile-hidden">
+            <li><a class="button navlink" href="glasses.html">Glasses</a></li>
+            <li><a class="button navlink" href="sunglasses.html">Sunglasses</a></li>
+            <li><a class="button navlink" href="contactlenses.html">Contact Lenses</a></li>
+            <li><a class="button navlink" href="about.html">About</a></li>
+            <li><a class="button navlink" href="events.html">Events</a></li>
+            <li><a class="button navlink nav-icon" href="checkout.html"><img class="icon" width="30" height="30" src="img/cart.png" alt="checkout cart"></a></li>
+            <li><a class="button navlink" href="#"><img class="icon" width="30" height="30" src="img/login.png" alt="login-logout"></a></li>
+          </ul>
+      </nav>
+    </div>
     </section>
 
     <section>
@@ -303,27 +261,36 @@
 
     <h3>Sample code:</h3>
     <code>
-          &lt;h2&gt;Bolon 9827 Black&lt;/h2&gt;
-          &lt;figure&gt;
-            &lt;img width="500" height="400" alt="Glasses" src="img/eyewear1.jpg"&gt;
-          &lt;p&gt; Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien.
-          &lt;/figure&gt;
-          &lt;/p&gt;
+        &lt;div class=&quot;section group&quot;&gt;
+          &lt;div class=&quot;col span_1_of_3&quot;&gt;
+            &lt;figure class=&quot;product-eyewear&quot;&gt;
+            &lt;a href=&quot;current_product.html&quot;&gt;
+            &lt;img width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;Glasses&quot; src=&quot;img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg&quot;&gt;
+            &lt;/a&gt;
+            &lt;figcaption class=&quot;product-eyewearinfo&quot;&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;Joseph Marc 4148&lt;/p&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;$99.00&lt;/p&gt;
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;
+          &lt;/div&gt;
+        &lt;/div&gt
     </code>
 
 
         <h3>Rendered element:</h3> 
-    <div class="grid-row"> <!-- Starting a different grid-row -->
-      <div class="grid-col-5of10"> <!-- Opening another column of our grid -->
-        <article class="Glasses">
-          <h2>Bolon 9827 Black</h2>
-          <figure>
-            <img width="500" height="400" alt="Glasses" src="img/eyewear1.jpg">
-          <p> Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien.</p>
-        </figure>
-        </article>
-      </div>
-    </div>
+        <div class="section group">
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4148</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+        </div>
 
 
     </section>
@@ -333,79 +300,100 @@
 
         <h3>Sample code:</h3>
         <code>
-        &lt;div class="grid-row"&gt;
+         &lt;div class=&quot;section group&quot;&gt;
+          &lt;div class=&quot;col span_1_of_3&quot;&gt;
+            &lt;figure class=&quot;product-eyewear&quot;&gt;
+            &lt;a href=&quot;current_product.html&quot;&gt;
+            &lt;img width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;Glasses&quot; src=&quot;img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg&quot;&gt;
+            &lt;/a&gt;
+            &lt;figcaption class=&quot;product-eyewearinfo&quot;&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;Joseph Marc 4148&lt;/p&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;$99.00&lt;/p&gt;
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;
+          &lt;/div&gt;
 
-      &lt;div class="grid-col-5of10"&gt; 
+         &lt;div class=&quot;col span_1_of_3&quot;&gt;
+            &lt;figure class=&quot;product-eyewear&quot;&gt;
+            &lt;a href=&quot;current_product.html&quot;&gt;
+            &lt;img width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;Glasses&quot; src=&quot;img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg&quot;&gt;
+            &lt;/a&gt;
+            &lt;figcaption class=&quot;product-eyewearinfo&quot;&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;Joseph Marc 4031&lt;/p&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;$99.00&lt;/p&gt;
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;
+          &lt;/div&gt;
 
-        &lt;article class="Glasses"&gt;
-
-          &lt;h2&gt;Eyewear First&lt;/h2&gt;
-
-          &lt;figure&gt;
-            &lt;img width="500" height="400" alt="Glasses" src="img/eyewear1.jpg"&gt;
-
-          &lt;p> Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien.&lt;/p&gt;
-
-        &lt;/article>
-
-      &lt;/div>
-
+          &lt;div class=&quot;col span_1_of_3&quot;&gt;
+            &lt;figure class=&quot;product-eyewear&quot;&gt;
+            &lt;a href=&quot;current_product.html&quot;&gt;
+            &lt;img width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;Glasses&quot; src=&quot;img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg&quot;&gt;
+            &lt;/a&gt;
+            &lt;figcaption class=&quot;product-eyewearinfo&quot;&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;Joseph Marc 4141&lt;/p&gt;
+                  &lt;p class=&quot;product-eyenamename&quot;&gt;$99.00&lt;/p&gt;
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
         </code>
     
 
     <h3>Rendered element:</h3> 
-    <div class="grid-row"> <!-- Starting a different grid-row -->
+        <div class="section group">
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4148</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
 
-      <div class="grid-col-5of10"> <!-- Opening another column of our grid -->
+         <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4031</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
 
-        <article class="Glasses">
-
-          <h2>Eyewear First</h2>
-
-          <figure>
-            <img width="500" height="400" alt="Glasses" src="img/eyewear1.jpg">
-
-          <p> Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien.</p>
-          </figure>
-        </article>
-
-      </div> <!-- Closing the column of our grid -->
-
-
-      <div class="grid-col-5of10"> <!-- Opening another column of our grid -->
-
-        <article class="Glasses">
-
-          <h2>Eyewear Second</h2>
-
-          <figure>
-            <img width="500" height="400" alt="Glasses" src="img/eyewear2.jpg">
-   
-          </figure>
-
-
-          <p>Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien.</p>
-
-        </article>
-
-      </div> <!-- Closing the column of our grid -->
-    </div> <!-- Closing the grid -->
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4141</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+        </div>
   </section>
 
   <section>
     <h2>Colour Palette</h2>
-        <div class="greyColour" style="background: #E1E8F0">
-              <h2><strong>GREY</strong> 
-              #E1E8F0</h2>
+        <div class="greyColour" style="background: #fff">
+              <h2><strong>WHITE</strong> 
+              #FFF</h2>
     </div>
-        <div class="greyColour" style="background: #6ED3CF">
-              <h2><strong>BLUE</strong> 
-              #6ED3CF</h2>
+        <div class="greyColour" style="background: #f1c40f">
+              <h2><strong>YELLOW</strong> 
+              #f1c40f</h2>
     </div>
-        <div class="greyColour" style="background: #E62739">
+        <div class="greyColour" style="background: #802828">
               <h2><strong>RED</strong> 
-              #E62739</h2>
+              #802828</h2>
     </div>
 
   </section>
@@ -414,9 +402,6 @@
 
     <h2>Imagery Potential</h2>
     <img width="500" height="1400" alt="Glasses" src="img/eyewear3.jpg">
-
-    <p>HELLO THERE MISTER</p>
-
 
 </section>
 

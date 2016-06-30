@@ -12,3 +12,42 @@ div, body{
   font-family: "Open Sans", Arial, sans-serif;
   
 }
+
+.styleguide-nav li{
+	list-style: none;
+	display: block;
+	text-align: left;
+}
+
+section {
+	padding-bottom: 2em;
+	border-bottom: 1px solid #2d2d2d;
+}
+
+code {
+	background-color: #e5e5e5;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
