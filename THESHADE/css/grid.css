@@ -1,13 +1,38 @@
 /*Grid System*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+.grid-container {
+/*  overflow: hidden;*/
+}
 
 .grid-container:after { /* Clears the floats after a grid row */
   content: "";
   display: table;
   clear: both;
+
 }
 
 [class*='col-'] { /* By default (mobile-first) columns are stacked */
-  margin:1em 0;
+  float: left;
 }
 
 .more-below, .more-below-small { /* Class to be used if there's more content below (more-below-small only shows up when the screen is very small) */

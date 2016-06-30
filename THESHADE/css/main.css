@@ -87,7 +87,7 @@ section code {
 
 .img-logo { /* When the screen is small, have the logo centered and above the navigation */
   display:block;
-  margin:0 auto;
+  margin-left: 10em;
   padding:1em 0;
   max-height:6em;
   width:auto;
