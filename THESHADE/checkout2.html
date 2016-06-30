@@ -6,14 +6,18 @@
 
     <title>THESHADE Eyewear - Paymentr</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/newgrid.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body>
-  	<div class="wrapper">
+  	<div class="bg">
+    <div class="wrapper">
+
   	<!-- navbar -->
-	<nav class="fixednavbar">
+  	<div class="section group">
+      <nav class="fixednavbar">
           <a href="index.html"><img class="img-logo" src="img/LOGO2.png" alt="THE SHADE LOGO."></a>
           <img src="https://cdn1.iconfinder.com/data/icons/android-user-interface-vol-1/16/38_-_menu_bar_lines_option_list_hamburger_web-128.png" alt="menu icon" class="menu">
           <ul class="nav-mobile-hidden">
@@ -21,20 +25,17 @@
             <li><a class="button navlink" href="sunglasses.html">Sunglasses</a></li>
             <li><a class="button navlink" href="contactlenses.html">Contact Lenses</a></li>
             <li><a class="button navlink" href="about.html">About</a></li>
-            <li><a class="button navlink checkout" href="checkout.html">Checkout (2)</a></li>
+            <li><a class="button navlink" href="events.html">Events</a></li>
+            <li><a class="button navlink nav-icon" href="checkout.html"><img class="icon" width="30" height="30" src="img/cart.png" alt="checkout cart"></a></li>
+            <li><a class="button navlink" href="#"><img class="icon" width="30" height="30" src="img/login.png" alt="login-logout"></a></li>
           </ul>
       </nav>
+    </div>
 
-	    <div class="grid-container">
-		    <section>
-		    	<h1>Shipping information</h1>
-		    	<p>Fill in your shipping information here. All fields required!</p>
-		    </section>
-	    </div>
-
-	    <div class="grid-container">
-	  		<div class="col-2of3">
-				<section id="shipping-info">
+	<div class="section group">
+		<div class="col span_2_of_3">
+			<section id="shipping-info">
+				<h1>Shipping information</h1>
 					<form class="checkout-form">
 						<p>
 				        	<input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
@@ -62,11 +63,13 @@
 				        	<input name="phone" type="text" class="feedback-input" id="phone" placeholder="Phone number" />
 				      	</p>
 					</form>	
-				</section>
-			</div>
+			</section>
+		</div>
 
-			<div class="col-1of3">
-				<section id="cart-total">
+		<div class="col span_1_of_3">
+			<section class="cart-total">
+				<div class="total-list">
+				<ul>
 					<li><h3>Subtotal:</h3>
 						<p class="price">$157.96</p>
 					</li>
@@ -77,14 +80,25 @@
 					<li><h3>Total:</h3>
 						<p class="price">$166.96</p>
 					</li>
-				</section>
-				<a href="checkout.html" class="button-nav button-left">BACK</a>
-				<a href="checkout3.html" class="button-nav button-right">NEXT</a>
-			</div>
+				</ul>
+				</div>
 
+				<a href="checkout.html" class="nav-button button-left">BACK</a>
+				<a href="checkout3.html" class="nav-button button-right">NEXT</a>
+			</section>
 		</div>
 	</div>
 
+	</div>
+
+	<footer>
+		<p>IAT 339 D102 - Alison Wong, Joshua Nicholas</p>
+	</footer>
+
+
+	</div>
+
   </body>
+
 
 </html>
