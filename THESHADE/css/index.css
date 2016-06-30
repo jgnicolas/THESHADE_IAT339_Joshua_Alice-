@@ -341,8 +341,15 @@ nav ul li:last-child {
   color: #2d2d2d;
 }
 
+#confirm {
+  color: #fff;
+  text-align: center;
+  margin-top: 10em;
+}
+
 .nav-button {
   width: 90%;
+  max-width: 300px;
   text-decoration: none;
   text-align: center;
   background-color: #802828;
