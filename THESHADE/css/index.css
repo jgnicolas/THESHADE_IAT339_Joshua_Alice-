@@ -519,5 +519,35 @@ textarea { /* Ensure that the textarea is big enough and that it doesn't somehow
 
 
 
+/* text elements */
+h1.about {
+  color:#e74c3c;
+  font-size:2rem;
+  text-align: center;
+  font-family: 'Open+Sans', sans-serif;
+  margin:0;
+  padding-top: 2rem;s
+}
+
+h1.about2 {
+  color:#e74c3c;
+  font-size:1.5rem;
+  text-align: center;
+  font-family: 'Open+Sans', sans-serif;
+  margin:0;
+  padding-top: 2rem;s
+  t
+}
+
+h1.about3 {
+  color:#232838;
+  text-align: center;
+  font-size:1.2rem;
+  font-family: 'Open+Sans', sans-serif;
+  margin:0;
+  padding-top: 2rem;s
+
+}
+
 
 
