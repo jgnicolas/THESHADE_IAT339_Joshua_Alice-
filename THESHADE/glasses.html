@@ -9,108 +9,163 @@
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/newgrid.css" rel="stylesheet">
   </head>
 
-  <body>
-  	<div class="wrapper"> <!-- // DIV that wraps around the whole document -->
-        <!-- NAVIGATION -->
-        <nav class="fixednavbar">
-        <a href="index.html"><img class="img-logo" src="img/LOGO2.png" alt="THE SHADE LOGO."></a>
-        <ul class="nav-mobile-hidden">
-          <li><a class="button navlink" href="glasses.html">Glasses</a></li><li><a class="button navlink" href="sunglasses.html">Sunglasses</a></li><li><a class="button navlink" href="contactlenses.html">Contact Lenses</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (5)</a></li>
-        </ul>
-        </nav>
-        <!-- NAVIGATION -->
+ <body>
+    <div class="wrapper">
 
-
-        <h1>Glasses Frames</h1>
-
-        <!-- Glasses Frames -->
-        <div class="grid.container">
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <a href="current_product.html">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg"></a>
-            <p class="product-name">Frame 1</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 2</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 3</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-        </div>
-
-                <div class="grid.container">
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <a href="current_product.html">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg"></a>
-            <p class="product-name">Frame 1</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 2</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 3</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-        </div>
-
-                <div class="grid.container">
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <a href="current_product.html">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg"></a>
-            <p class="product-name">Frame 1</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 2</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-
-          <div class="col-1of3">
-            <figure class="product-listing">
-            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg">
-            <p class="product-name">Frame 3</p>
-            <p class="product-price">$60</p>
-            </figure>
-          </div>
-        </div>
-
-
-
-
-
+    <!-- navbar -->
+    <div class="section group">
+      <nav class="fixednavbar">
+          <a href="index.html"><img class="img-logo" src="img/LOGO2.png" alt="THE SHADE LOGO."></a>
+          <img src="https://cdn1.iconfinder.com/data/icons/android-user-interface-vol-1/16/38_-_menu_bar_lines_option_list_hamburger_web-128.png" alt="menu icon" class="menu">
+          <ul class="nav-mobile-hidden">
+            <li><a class="button navlink" href="glasses.html">Glasses</a></li>
+            <li><a class="button navlink" href="sunglasses.html">Sunglasses</a></li>
+            <li><a class="button navlink" href="contactlenses.html">Contact Lenses</a></li>
+            <li><a class="button navlink" href="about.html">About</a></li>
+            <li><a class="button navlink" href="events.html">Events</a></li>
+            <li><a class="button navlink nav-icon" href="checkout.html"><img class="icon" width="30" height="30" src="img/cart.png" alt="checkout cart"></a></li>
+            <li><a class="button navlink" href="#"><img class="icon" width="30" height="30" src="img/login.png" alt="login-logout"></a></li>
+          </ul>
+      </nav>
     </div>
+
+      <!-- Banner -->
+        <div class="section group">
+          <div class="col span_3_of_3">
+             <img class="banner" alt="Glasses" src="img/glassbanner.jpg">
+          </div>
+        </div>
+        <!-- Banner ENDS-->
+
+        <div class="product-wrapper">
+          <!-- Glasses Frames -->
+        <div class="section group">
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4142-havana+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4148</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+         <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4031-brown+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4031</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/joseph-marc-4141-black+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">Joseph Marc 4141</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+        </div>
+  
+        <div class="section group">
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/derek-cardigan-7003-water-wheel+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">derek cardigan 7003</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/derek-cardigan-7004-ice+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">derek cardigan 7004</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <a href="current_product.html">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/derek-cardigan-7028-black+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">derek cardigan 70030</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+        </div>
+ 
+
+       <div class="section group">
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/genesis-2031l-002-salsa+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">genesis 2020</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/penguin-the-simon-bk-matte-black+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">penguin the simon 1314</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+
+          <div class="col span_1_of_3">
+            <figure class="product-eyewear">
+            <img width="100%" height="100%" alt="Glasses" src="img/eyewear/lacoste-l2718-001-black+fr++productPageLargeRWD.jpg">
+            </a>
+            <figcaption class="product-eyewearinfo">
+                  <p class="product-eyenamename">lacoste 2618</p>
+                  <p class="product-eyenamename">$99.00</p>
+            </figcaption>
+            </figure>
+          </div>
+        </div>
+
+  </div>
+
+  <footer>
+    <p>IAT 339 D102 - Alison Wong, Joshua Nicholas
+          <a href="Style_guide.html">Style Guide</a>
+          <a href="Citations.html">Citations</a>
+          <a href="https://github.com/jgnicolas/THESHADE_IAT339_Joshua_Alice-">GitHub</a>
+    </p>
+  </footer>
+
+
+  </div>
+
   </body>
 </html>
