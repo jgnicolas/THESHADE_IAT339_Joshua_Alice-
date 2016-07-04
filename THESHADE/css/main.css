@@ -454,6 +454,14 @@ p.product-eyenamename  {
   color:#FFF;
 }
 
+.product-eyewear img {
+  width: 100%;
+}
+
+.product-detail-pic {
+  width: 24%;
+}
+
 /* Product Listing - Eyewear ENDS */
 
 /* Current Product  - Eyewear  */
